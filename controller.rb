@@ -45,9 +45,10 @@ end
 
   get '/camelcaser/*' do
 
-    camelized = CamelCaser.new(params[:splat]).camelize
+    @camelcased = CamelCaser.new(params[:splat]).camelize
 
-    return camelized
+    erb :camelcaser_and
+    
 
   end
 
