@@ -45,7 +45,7 @@ end
 
   get '/camelcaser/*' do
 
-    camelized = CamelCaser.new(params[:splat].to_s).camelize
+    camelized = CamelCaser.new(params[:splat]).camelize
 
     return camelized
 

@@ -11,7 +11,7 @@ class CamelCaser
 
   def camelize
 
-    word_array = @content.tr('/', ' ').split
+    word_array = @content[0].tr('/', ' ').split
 
     capitalized = []
 
@@ -30,6 +30,8 @@ class CamelCaser
     end
 
     return new_s
+
+
 
   end
 

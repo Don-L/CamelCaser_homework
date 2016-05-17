@@ -7,7 +7,7 @@ class TestCalculator < Minitest::Test
 
   def setup
 
-    @camelcaser = CamelCaser.new('camel/case/me')
+    @camelcaser = CamelCaser.new(['/camel/case/me'])
 
   end
 
